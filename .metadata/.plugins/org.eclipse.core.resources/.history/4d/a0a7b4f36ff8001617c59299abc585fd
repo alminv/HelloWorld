@@ -8,10 +8,5 @@ public class HelloWorldTest {
 	public void test() {
 		fail("Not yet implemented");
 	}
-	
-	@Test
-	public void testSum() {
-		assertEquals(4, HelloWorld.sum());
-	}
 
 }

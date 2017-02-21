@@ -19,10 +19,5 @@ public class HelloWorldTest {
 	public void testSum2(){
 		assertNotEquals(5, HelloWorld.sum());
 	}
-	
-	@Test
-	public void testSum3(){
-		assertNotEquals(7, HelloWorld.sum());
-	}
 
 }

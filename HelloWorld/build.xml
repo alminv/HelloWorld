@@ -61,8 +61,11 @@
             <classpath refid="HelloWorld.classpath"/>
         </java>
     </target>
+	<target name="clean" description="Delete all generated files">
+        <delete dir="${junit.output.dir}" failonerror="false"/>
+     </target>
+	 <!--
     <target name="HelloWorldTest">
-		<delete dir="${junit.output.dir}"/>
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
@@ -78,5 +81,5 @@
             </fileset>
             <report format="frames" todir="${junit.output.dir}"/>
         </junitreport>
-    </target>
+    </target> -->
 </project>
